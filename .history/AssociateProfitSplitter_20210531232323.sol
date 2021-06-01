@@ -1,4 +1,4 @@
-pragma solidity ^0.8.4;
+pragma solidity ^0.5.0;
 
 // lvl 1: equal split
 contract AssociateProfitSplitter {
@@ -28,11 +28,12 @@ contract AssociateProfitSplitter {
         employee_three.transfer(amount);
 
         // @TODO: take care of a potential remainder by sending back to HR (`msg.sender`)
-        msg.sender.transfer(msg.value - amount * 3);
+       msg.sender.transfer(msg.value - amount * 3);
+
     }
 
     function() external payable {
         // @TODO: Enforce that the `deposit` function is called in the fallback function!
-        deposit();
+        // Your code here!
     }
 }

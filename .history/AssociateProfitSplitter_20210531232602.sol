@@ -1,4 +1,3 @@
-pragma solidity ^0.8.4;
 
 // lvl 1: equal split
 contract AssociateProfitSplitter {
